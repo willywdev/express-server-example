@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express - Create File</title>
+    <link rel="stylesheet" href="create-file.css">
+    <!-- Toast notification styles (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="/" class="home-btn">🏠 Home</a>
+
+    <h1>Create a File or Files using Express</h1>
+    
+    <form id="createFileForm">
+      <div>
+        <label for="filename">Filename:</label>
+        <input type="text" id="filename" name="filename" required>
+      </div>
+      <div>
+        <label for="content">File Content:</label>
+        <textarea id="content" name="content" rows="8"></textarea>
+      </div>
+      <button type="submit">Save File</button>
+    </form>
+
+    <h2>Live-View of the Server-Files</h2>
+    <p>Also check out your File Explorer in your OS</p>
+
+    <div id="fileList">
+      <p class="empty">Loading...</p>
+    </div>
+
+    <!-- Toast library (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="toast.js"></script>
+    <script src="create-file.js"></script>
+</body>
+</html>
